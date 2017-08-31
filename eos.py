@@ -14,7 +14,7 @@ def main():
             result = json.loads(resp.text)
 
 
-            period = 13
+            period = 54
             today_sale = result[period]
             today_ico_eth = round(today_sale['dailyTotal'], 2)
 
@@ -50,9 +50,9 @@ def main():
             # print 'main running'
         except Exception as identifier:
             print(identifier)
-        
+
         time.sleep(1)
-     
+
 
 if __name__ == '__main__':
     main()
